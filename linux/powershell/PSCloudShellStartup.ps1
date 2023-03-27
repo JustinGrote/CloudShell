@@ -33,8 +33,8 @@ Az.Accounts\Enable-AzureRmAlias
 # For Pwsh profile, see https://docs.microsoft.com/en-us/powershell/scripting/whats-new/what-s-new-in-powershell-core-60?view=powershell-6#filesystem
     
 $script:UserDefaultPath = $HOME
-$script:CurrentHostProfilePath = (Microsoft.PowerShell.Management\Join-Path -Path $script:UserDefaultPath -ChildPath '.config/PowerShell/Microsoft.PowerShell_profile.ps1')
-$script:AllHostsProfilePath    = (Microsoft.PowerShell.Management\Join-Path -Path $script:UserDefaultPath -ChildPath '.config/PowerShell/profile.ps1') 
+$script:CurrentHostProfilePath = (Microsoft.PowerShell.Management\Join-Path -Path $script:UserDefaultPath -ChildPath '.config/powershell/Microsoft.PowerShell_profile.ps1')
+$script:AllHostsProfilePath    = (Microsoft.PowerShell.Management\Join-Path -Path $script:UserDefaultPath -ChildPath '.config/powershell/profile.ps1') 
 
 # To ensure that the installed script is immediately usable, we need to add the scope path to the PATH enviroment variable.
 $scriptPath = Microsoft.PowerShell.Management\Join-Path $env:HOME '.local/share/powershell/Scripts'
